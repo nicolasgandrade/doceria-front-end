@@ -30,4 +30,4 @@ A front end project made for a fictitious candy store website using HTML, CSS an
 &nbsp;
 <hr>
 
-This website was developed for study based on the layout created by <a href="https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ" target="_blank">Bedimcode</a>.
+This front end project was developed for study based on the layout created by <a href="https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ" target="_blank">Bedimcode</a>.
