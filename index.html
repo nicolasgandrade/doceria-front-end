@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<title>Restaurante</title>
+</head>
+<body>
+	
+	<header class="header" id="header">
+		<nav class="nav bd-container">
+			<a href="#" class="nav__logo">Bilbo Doceiro</a>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+					<li class="nav__item"><a href="#services" class="nav__link">Serviços</a></li>
+					<li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+					<li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+				</ul>
+			</div>
+
+			<div class="nav__toggle" id="nav-toggle">
+				<i class='bx bx-menu-alt-right'></i>
+			</div>
+		</nav>
+	</header>
+
+	<main class="1-main">
+		<!--HOME-->
+		<section class="home" id="home">
+			<div class="home__container bd-container bd-grid">
+				<div class="home__data">
+					<h1 class="home__title">Bilbo Doceiro</h1>
+					<h2 class="home__subtitle">Doces Gourmet</h2>
+					<a href="#menu" class="button">Veja o nosso cardápio</a>
+				</div>
+
+				<img src="./imagens/capa.png" class="home__img">
+			</div>
+		</section>
+
+		<!--SOBRE-->
+
+		<section class="about section bd-container" id="sobre">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Conheça:</span>
+                        <h2 class="section-title about__initial">Nossa história</h2>
+                        <p class="about__description">Começamos vendendo doces via delivery em São Paulo, e logo expandimos o nosso negócio para 3 quiosques em praças de alimentação nos principais shoppings da cidade.</p>
+                        <a href="#" class="button">Saiba mais</a>
+                    </div>
+
+                    <img src="imagens/panquecas.jpg" alt="" class="about__img">
+                </div>
+        </section>
+
+		<!--SERVIÇOS-->
+
+		<section class="services section bd-container" id="services">
+			<span class="section-subtitle">Conheça</span>
+			<h2 class="section-title">Nossos serviços</h2>
+
+			<div class="services__content bd-grid">
+				<img class="services__img" src="./imagens/cupcake.svg">
+				<h3 class="services_title">Atendimento no Local</h3>
+				<p class="services__description">Venha nos visitar e experimente os melhores doces de São Paulo no nosso ambiente pensado na melhor experiência para você.</p>
+			</div>
+
+			<div class="services__content bd-grid">
+				<img class="services__img" src="./imagens/cake.svg">
+				<h3 class="services_title">Doces sob Encomenda</h3>
+				<p class="services__description">Encomende tudo o que precisar para pequenos ou grandes eventos, que a Bilbo Doceiro faz e leva tudo até você.</p>
+			</div>
+
+			<div class="services__content bd-grid">
+				<img class="services__img" src="./imagens/scooter.svg">
+				<h3 class="services_title">Doces sob Encomenda</h3>
+				<p class="services__description">Com o nosso serviço de delivery, fica fácil te atender na porta da sua casa, nos contacte, e enviamos até você a sobremesa que quiser.</p>
+			</div>
+		</section>
+
+
+
+		<!--MENU-->
+
+		<section class="menu section bd-container" id="menu">
+			
+			<span class="section-subtitle">Experimente!
+			</span>
+			<h2 class="section-title">Menu da Casa</h2>
+
+			<div class="menu__container bd-grid">
+				
+				<div class="menu__content">
+					<img src="./imagens/brownie.jpg" alt="bolo de blue-berry" class="menu__img">
+					<h3 class="menu__name">Taça de Brownie</h3>
+					<span class="menu__detail">Sorvete de baunilia, brownie, óreo e calda de chocolate </span>
+					<span class="menu__price">R$17,50</span>
+					<a href="" class="menu__button"><i class='bx bx-cart-alt'></i></a>
+				</div>
+
+				<div class="menu__content">
+					<img src="./imagens/torta.jpg" alt="bolo de blue-berry" class="menu__img">
+					<h3 class="menu__name">Torta de Chocolate</h3>
+					<span class="menu__detail">Fatia de torta de chocolate com morango</span>
+					<span class="menu__price">R$07,00</span>
+					<a href="" class="menu__button"><i class='bx bx-cart-alt'></i></a>
+				</div>
+
+				<div class="menu__content">
+					<img src="./imagens/waffle.jpg" alt="bolo de blue-berry" class="menu__img">
+					<h3 class="menu__name">Waffle</h3>
+					<span class="menu__detail">Waffle com frutas vermelhas e chocolate</span>
+					<span class="menu__price">R$09,00</span>
+					<a href="" class="menu__button"><i class='bx bx-cart-alt'></i></a>
+				</div>
+
+				<div class="menu__content">
+					<img src="./imagens/donuts.jpg" alt="bolo de blue-berry" class="menu__img">
+					<h3 class="menu__name">Donuts</h3>
+					<span class="menu__detail">Donut tradicional com cobertura de chocolate</span>
+					<span class="menu__price">R$06,00</span>
+					<a href="" class="menu__button"><i class='bx bx-cart-alt'></i></a>
+				</div>
+
+				<div class="menu__content">
+					<img src="./imagens/bolobbry.jpg" alt="bolo de blue-berry" class="menu__img">
+					<h3 class="menu__name">Bolo de Blueberry</h3>
+					<span class="menu__detail">Fatia de bolo de blueberry com canela</span>
+					<span class="menu__price">R$05,90</span>
+					<a href="" class="menu__button"><i class='bx bx-cart-alt'></i></a>
+				</div>
+			</div>
+
+		</section>
+
+		<!--CONTATO-->
+
+		<section class="contato section bd-container" id="contato">
+			
+			<div class="contato__container bd-grid">
+				<div class="contato__data">
+					<span class="section-subtitle">Converse conosco!</span>
+					<h2 class="section-title">Contato:</h2>
+					<p class="contato__descricao">Envie-nos uma mensagem pelo whatsapp, e em poucos minutos atenderemos você. Nosso serviço de atendimento funciona das 08:00 às 18:30, de segunda a sábado.</p>
+
+				</div>
+
+				<div class="contato__button">
+					<a href="" class="button">Contate-nos agora!</a>
+					<p>Ou ligue para:</p>
+					<p>(15) 9999-8888</p>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<!--Rodapé-->
+		<footer class="footer section bd-container">
+			<div class="footer__container bd-grid">
+				<div class="footer__content">
+					<a href="#" class="footer__logo">Bilbo Doceiro</a>
+
+					<div class="social">
+						<a href="#" class="footer__social"><i class='bx bxl-facebook-circle'></i></a>
+						<a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+						<a href="#" class="footer__social"><i class='bx bxl-whatsapp'></i></a>
+					</div>
+				</div>
+
+				<div class="footer__content">
+					<h3 class="footer__title">Endereço</h3>
+					<ul>
+						<li>Rua José da Silva, n01</li>
+						<li>Bairro das Flores</li>
+						<li>São Paulo - SP</li>
+						<li>bilbo@doceiro.com</li>
+					</ul>
+				</div>
+
+				<div class="footer__content">
+					<h3 class="footer__title">Informaçes</h3>
+					<ul>
+						<li><a href="#" class="footer__link">Contato Profissional</a></li>
+						<li><a href="#" class="footer__link">Termos de Serviço</a></li>
+						<li><a href="#" class="footer__link">Política de Privacidade</a></li>
+					</ul>
+				</div>
+
+				
+
+
+			</div><br><br><br>
+
+			<div class="creditos">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><br>
+
+			<div class="creditos">Site desenvolvido a fim de estudo baseado no layout criado por <a href="https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ" target="_blank">Bedimcode</a>, sendo assim, abdico de quaisquer direitos sobre este, e reservo-os ao designer do layout.</div>
+
+			<div class="creditos">Website developed for study based on the layout created by <a href="https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ" target="_blank">Bedimcode</a>, therefore, I waive any rights over it, reserving them to the layout designer.</div>
+
+		</footer>
+
+
+	</main>
+
+
+	<script type="text/javascript" src="./script.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

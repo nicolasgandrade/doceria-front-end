@@ -1,0 +1,541 @@
+/*--------------------------
+-------------FONTES--------
+-------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+/*--------------------------
+----------VARIÁVEIS--------
+-------------------------*/
+
+:root {
+
+	--altura-header: 3rem;
+
+
+	--cor-primaria: #F23D6D;
+	--cor-primaria-alt: #F20530;
+	--cor-titulo: #393939;
+	--cor-texto: #707070;
+	--cor-texto-light: #A6A6A6;
+	--cor-body: #F1F0F2;
+	--cor-container: #FFFFFF;
+
+	/*------tipografia-------*/
+
+	--body-font: 'Montserrat', sans serif;
+	--fonte-grande: 2.25rem;
+	--tamanho-h1: 1.5rem;
+	--tamanho-h2: 1.25rem;
+	--tamanho-h3: 1rem;
+	--fonte-normal: 0.938;
+	--fonte-pequena: 0.813;
+	--fonte-menor:  0.75rem;
+
+	/*------MARGENS--------*/
+
+	--mb-1: .5rem;
+	--mb-2:  1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+
+	/*-------Z-INDEX----*/
+
+	--z-tooltip: 10;
+	--z-fixed:  100;
+}
+
+@media screen and (min-width: 768px){
+	:root {
+
+	--altura-header: 1rem;
+
+
+	--cor-primaria: #F23D6D;
+	--cor-primaria-alt: #F20530;
+	--cor-titulo: #393939;
+	--cor-texto: #707070;
+	--cor-texto-light: #A6A6A6;
+	--cor-body: #F1F0F2;
+	--cor-container: #FFFFFF;
+
+	--body-font: 'Montserrat', sans serif;
+
+	--fonte-grande: 4rem;
+	--tamanho-h1: 2.25rem;
+	--tamanho-h2: 1.5rem;
+	--tamanho-h3: 1.25rem;
+	--fonte-normal: 1rem;
+	--fonte-pequena: 0.875rem;
+	--fonte-menor:  0.813rem;
+
+	--mb-1: .5rem;
+	--mb-2:  1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+
+	/*-------Z-INDEX----*/
+
+	--z-tooltip: 10;
+	--z-fized:  100;
+}}
+
+
+
+/*---------CSS GLOBAL-----------*/
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 2vh;
+	font-family: var(--body-font);
+	font-size: var(--fonte-noramal);
+	background-color: var(--cor-body);
+	color: var(--cor-texto);
+	line-height: 1.6rem;
+}
+
+h1,h2,h3,p,ul{
+	margin: 0;
+	line-height: 2rem;
+}
+
+ul{
+	padding: 0;
+	list-style: none;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+
+/*-----CLASSES------*/
+
+.section{
+	padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle{
+	text-align: center;
+}
+
+.section-title{
+	font-size: var(--tamanho-h1);
+	color: var(--cor-titulo);
+	margin-bottom: var(--mb-3);
+}
+
+.section-subtitle{
+	display:  block;
+	color: var(--cor-primaria);
+	font-weight: var(--fonte-normal);
+	margin-bottom: var(--mb-1);
+}
+
+
+/*-------LAYOUT-------*/
+
+.bd-container{
+	max-width: 960px;
+	width: calc(100% - 2rem);
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+}
+
+.bd-grid{
+	display: grid;
+	gap:  1.5rem;
+}
+
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: var(--cor-body);
+	height: var(--altura-header);
+}
+
+
+
+
+/*---------NAVBAR-----------*/
+
+.nav{
+	max-width: 1024px;
+	height: var(--altura-header);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0px;
+	font-size: 1.3rem;;
+}
+
+@media screen and (max-width: 768px){
+	.nav__menu{
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		padding: 1.5rem 0 1rem;
+		text-align: center;
+		background-color: var(--cor-body);
+		transition: 0.4s;
+		box-shadow: 0 4px 4px rgba(0,0,0,.1);
+		border-radius: 0 0 1rem 1rem;
+		z-index: var(--z-fixed);
+	}
+
+
+}
+
+.nav__item{
+	margin-bottom: var(--mb-2);
+
+}
+
+.nav__link, .nav__logo, .nav__toggle{
+	color:  var(--cor-texto);
+	font-weight: var(--fonte-normal);
+}
+
+.nav__logo{
+	z-index: 101;
+	color: var(--cor-primaria);
+}
+
+.nav__logo:hover{
+	color: var(--cor-primaria);
+}
+
+.nav__link{
+	transition: 2s;
+}
+
+.nav__toggle{
+	font-size: 1.3rem;
+	cursor: pointer;
+	z-index: 101;
+}
+
+.bx{
+	font-size: 1.5rem;
+}
+
+
+
+
+/*--------ABRIR O MENU---------*/
+
+.show-menu{
+	top: var(--altura-header);
+}
+
+.active-link{
+	color: var(--cor-primaria);
+}
+
+/*--------ADICIONAR SOMBRA A NAV--------*/
+
+.scroll-header{
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+/*-------HOME CONTAINER--------*/
+
+.home{
+	margin-bottom: var(--mb-3);
+	margin-top: 50px;
+	padding-top: 20px;
+}
+
+.home__container{
+	height: calc(100vh - var(--altura-header));
+	align-content: center;
+	margin: 0 auto 0 auto;
+}
+
+.home__data{
+}
+
+.home__title{
+	font-size: var(--fonte-grande);
+	margin-bottom: var(--mb-2);
+	color: var(--cor-primaria);
+}
+
+.home__subtitle{
+	font-size: var(--tamanho-h1);
+	margin-bottom: var(--mb-4);
+}
+
+.home__img{
+	width: 250px;
+	justify-self: center;
+}
+
+/*-------BOTÃO---------*/
+
+.button{
+	display: inline-block;
+	background-color:  var(--cor-primaria);
+	color: #FFFFFF;
+	padding: 0.75rem 1rem;
+	border-radius: 50px;
+	transition: 0.5s;
+	margin-bottom: var(--mb-3);
+}
+
+.button:hover{
+	background-color: var(--cor-primaria-alt);
+}
+
+
+/*-----SOBRE-------*/
+
+.about__data{
+  text-align: center;
+}
+
+.about__description{
+  margin-bottom: var(--mb-3);
+}
+
+.about__img{
+  width: 280px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+/*-----SEVIÇOS------*/
+
+.services__content{
+	text-align: center;
+}
+
+.services__description{
+	margin-bottom: var(--mb-3);
+}
+
+.services__img{
+	width: 60px;
+	fill: var(--cor-primaria);
+	justify-self: center;
+}
+
+/*------MENU------*/
+
+.menu__button{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color:  var(--cor-primaria);
+	color: #FFFFFF;
+	padding: 0.5rem 0.75rem;
+	border-radius: 10%;
+	transition: 0.5s;
+
+}
+
+.menu__button:hover{
+	background-color: var(--cor-primaria-alt);
+}
+
+.menu__container{
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+}
+
+.menu__content{
+	position:  relative;
+	display:  flex;
+	flex-direction: column;
+	background-color: var(--cor-container);
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 4px rgba(3,74,40, 0.15);
+	padding:  0.75rem;
+}
+
+.menu__img{
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: var(--mb-2);
+	margin: 0.2rem auto var(--mb-2) auto;
+	border-radius: 0.5rem;
+}
+
+.menu__name, .menu__price{
+	font-weight: 500;
+}
+
+.menu__name{
+	font-size: var(--fonte-normal);
+}
+
+.menu__detail, .menu__price{
+	font-size: var(--fonte-pequena);
+}
+
+.menu__detail{
+	margin-bottom: var(--mb-1);
+}
+
+
+
+/*-------CONTATO--------*/
+
+.contato__container{
+	text-align: center;
+}
+
+.contato__descricao{
+	margin-bottom: var(--mb-3);
+}
+
+/*-------FOOTER--------*/
+
+.footer__container{
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	row-gap: 2rem;
+}
+
+.footer__logo{
+	font-size: var(--tamanho-h3);
+	font-weight: 500;
+	color: var(--cor-primaria);
+	text-decoration: none;;
+}
+
+.social{
+	margin-top: var(--mb-3);
+}
+
+.footer__social{
+	font-size: 2rem;
+	color: var(--cor-titulo);
+	margin-right: var(--mb-3);
+}
+
+.footer__link{
+	text-decoration: none;
+	color: var(--cor-secundaria);
+}
+
+.footer__copy{
+	text-align: center;
+	margin-top: var(--mb-5);
+}
+
+.creditos{
+	font-size: .813rem;
+}
+
+
+
+/*-----MEDIA QUERIES----*/
+
+@media screen and (min-width: 576px){
+	.home__container, .about__container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.about__img{
+		order: -1;
+	}
+}
+
+@media screen and (min-width: 768px){
+	body{
+		margin: 0 auto 0 auto;
+		justify-content: center;
+	}
+
+	.section{
+		padding-top: 8rem;
+		margin: 0 auto 0 auto;
+	}
+
+	.nav{
+		height: calc(var(--altura-header) + 2.25rem);
+		margin: 0 auto 0 auto;
+	}
+
+	.nav__list{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.nav__item{
+		margin-left: var(--mb-5);
+		margin-bottom: 0;
+	}
+
+	.nav__menu{
+		align-content: flex-end;
+	}
+
+	.nav__toggle{
+		display: none;
+	}
+
+	.header{
+		height: calc(var(--altura-header) + 2.5rem);
+	}
+
+	.home{
+		height: 100vh;
+		justify-content: center;
+		margin: 0 auto 0 auto;
+	}
+
+	.home__title{
+		line-height: 3.3rem;
+	}
+
+	.home__img{
+		width: 270px;
+	}
+
+
+	.services__container, .menu__container{
+		margin-top: var(--mb-6);
+		text-align: initial;
+	}
+
+	.about__container{
+		margin: 0 auto 0 auto;
+	}
+
+	.about__img{
+		width: 400px;
+		height: 400px;
+		overflow: hidden;
+		object-fit: cover;
+	}
+}
