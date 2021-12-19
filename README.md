@@ -12,9 +12,6 @@ A front end project made for a fictitious candy store website using HTML, CSS an
 #### Desktop preview:
 <div align="center">
   <img src="https://raw.githubusercontent.com/nicolasgandrade/doceria-front-end/main/readme%20screenshots/bilbo-pc.gif" >
-  
-  <img src="https://raw.githubusercontent.com/nicolasgandrade/doceria-front-end/main/readme%20screenshots/smartmockups_kr2s8iku.jpg">
-</div>
 
 &nbsp;
 
